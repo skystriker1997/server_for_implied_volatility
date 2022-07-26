@@ -1,0 +1,14 @@
+<h2>To get implied volatility of European option, fullfill the below form.</h2> 
+<h3>Up to 3 decimals allowed for input</h3>
+<h3>Based on BS model & Newton's Iteration</h3>
+<h3>Newton's Iteration will repeat for 1000 times</h3>
+
+<form action="/cgi_bin/implied_volatility.cgi">
+	<div><label>type(1 or 0; 1 for call, 0 for put): <input name="type" size="5"></label></div>
+	<div><label>current price of underlying asset: <input name="s" size="5"></label></div>
+	<div><label>strike price: <input name="k" size="5"></label></div>
+	<div><label>time to mature: <input name="t" size="5"></label></div>
+	<div><label>interest rate(like 0.05, not in percent format): <input name="r" size="5"></label></div>
+	<div><label>current price of option: <input name="p" size="5"></label></div>
+	<div><input type="submit" value="Get implied volatility!"></div>
+</form>
